@@ -12,7 +12,7 @@ notAllowedTypesInArchive = ["about", "talks", "showcase"]
 homeHeaderType = "text" # text, img, slide
 
 # body
-enableBreadcrumb = true
+enableBreadcrumb = false
 enablePhotoSwipe = true
 enableSearch = true
 enableSearchHighlight = true
@@ -144,10 +144,3 @@ commento = false
   wechat = ""
   paypal = ""
   patreon = ""
-
-# possible share name: ["facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line"]
-[[share]]
-  name = "facebook"
-  username = ""
-[[share]]
-  name = "twitter"
