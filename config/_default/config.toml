@@ -1,4 +1,4 @@
-baseURL = "https://zzodocs.netlify.com/zzoDocs"
+baseURL = ""
 title = "zzoDocs"
 theme = "zzo"
 
