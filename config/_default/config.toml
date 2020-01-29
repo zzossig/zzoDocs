@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://zzodocs.netlify.com"
 title = "zzoDocs"
 theme = "zzo"
 
@@ -15,7 +15,7 @@ enableEmoji = true
 paginate = 13
 rssLimit = 100
 
-enableGitInfo = false
+enableGitInfo = true
 googleAnalytics = ""
 
 disableKinds = ["taxonomy", "taxonomyTerm"]

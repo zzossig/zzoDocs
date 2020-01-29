@@ -1,5 +1,5 @@
 [build]
-command = "hugo --gc --minify -b https://zzodocs.netlify.com/zzodocs"
+command = "hugo --gc --minify"
 
 [context.production.environment]
 HUGO_VERSION = "0.63.2"
