@@ -22,3 +22,8 @@ taxoPaginate = 13
 taxoGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 
 github = "https://github.com/zzossig/hugo-theme-zzo"
+
+enableComment = true
+[utterances]       # https://utteranc.es/
+  owner = "zzossig"              # Your GitHub ID
+  repo = "zzoDocs"               # The repo to store comments
