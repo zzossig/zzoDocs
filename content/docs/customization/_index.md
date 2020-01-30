@@ -5,3 +5,10 @@ draft: false
 collapsible: true
 weight: 5
 ---
+
+[Font](customfont)
+[Header](customheader)
+[Syntax Highlight](customsyntax)
+[Copyright](customcopyright)
+[CSS](customcss)
+[JS](customjs)

@@ -5,3 +5,11 @@ draft: false
 collapsible: true
 weight: 3
 ---
+
+[About](about)
+[Archive](archive)
+[Gallery](gallery)
+[Contact](contact)
+[Talks](talks)
+[Showcase](showcase)
+[Presentation](pt)

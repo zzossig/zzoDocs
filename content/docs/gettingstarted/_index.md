@@ -5,3 +5,6 @@ draft: false
 collapsible: true
 weight: 1
 ---
+
+[Quick Start](quickstart)
+[Installation](installation)

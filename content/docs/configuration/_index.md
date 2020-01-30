@@ -5,3 +5,10 @@ draft: false
 collapsible: true
 weight: 2
 ---
+
+[Config Files](configfiles)
+[Author](author)
+[Favicon](favicon)
+[Language direction](languagedir)
+[Table of Contents](tableofcontents)
+[Multi Language](multilanguage)
