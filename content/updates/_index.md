@@ -1,4 +1,4 @@
 ---
-title: "Docs"
+title: "Updates"
 description: "Zzo theme documentation"
 ---

@@ -1,13 +1,10 @@
-baseURL = "https://zzodocs.netlify.com"
-title = "zzoDocs"
-theme = "zzo"
+baseURL = "http://example.org"
+title = "Hugo Zzo Theme Documentation"
+theme = "zdoc"
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 hasCJKLanguage = false
-
-summaryLength = 70
-buildFuture = true
 
 copyright = "MIT&copy;zzossig"
 timeout = 10000
@@ -15,10 +12,9 @@ enableEmoji = true
 paginate = 13
 rssLimit = 100
 
-enableGitInfo = true
 googleAnalytics = ""
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomyTerm"]
 
 [markup]
   [markup.goldmark]
@@ -38,3 +34,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  tag = "tags"
