@@ -1,12 +1,12 @@
 baseURL = "http://example.org"
-title = "Hugo Zzo Theme Documentation"
-theme = "zzodoc"
+title = "Hugo Zdoc Theme"
+theme = "zdoc"
 
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
-hasCJKLanguage = false
+defaultContentLanguageInSubdir = true
+hasCJKLanguage = true
 
-copyright = "MIT&copy;zzossig"
+copyright = "&copy;{year}, All Rights Reserved"
 timeout = 10000
 enableEmoji = true
 paginate = 13
