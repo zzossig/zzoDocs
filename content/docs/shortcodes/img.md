@@ -6,7 +6,7 @@ weight: 6
 enableToc: false
 ---
 
-image with title, caption, alt, width, height 
+image with title, caption, alt, width, height
 
 ```
 {{</* img src="/images/shortcodes/notice.png" title="Notice" caption="Zzo Notice shortcode" alt="image alt" width="500px" height="500px" */>}}

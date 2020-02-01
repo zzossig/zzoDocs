@@ -18,6 +18,14 @@ If you want to add a link to the footer copyright, not just a text, you can cust
 
     The {} part will be your copyright link.
 
+    You can use markdown syntax for a link.
+
+    ```toml
+    ...
+    copyright = [zzossig](https://zzossig.io) - All right reserved
+    ...
+    ```
+
 2. In your params.toml file, set the copyrightOptions params
 
     ```toml
