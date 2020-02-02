@@ -10,7 +10,7 @@ enableToc: false
 
 Currently available service: **formspree**. Open an issue if you need another service vendor. 
 
-1. Make a file at root/contact/index.md
+1. Make a file at root/content/contact/index.md
 
 ```yaml
 ---
