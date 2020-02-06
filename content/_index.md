@@ -19,11 +19,11 @@ buttons:
   - link: https://github.com/zzossig/hugo-theme-zzo
     text: DOWNLOAD
     color: default
-shields:
-  - link: https://github.com/zzossig/hugo-theme-zzo
-    image: https://img.shields.io/github/forks/zzossig/hugo-theme-zzo?label=Fork&style=social
-    alt: Hugo ZDoc theme github forks
-  - link: https://github.com/zzossig/hugo-theme-zzo
-    image: https://img.shields.io/github/stars/zzossig/hugo-theme-zzo?label=Star&style=social
-    alt: Hugo ZDoc theme github stars
+# shields:
+#   - link: https://github.com/zzossig/hugo-theme-zzo
+#     image: https://img.shields.io/github/forks/zzossig/hugo-theme-zzo?label=Fork&style=social
+#     alt: Hugo ZDoc theme github forks
+#   - link: https://github.com/zzossig/hugo-theme-zzo
+#     image: https://img.shields.io/github/stars/zzossig/hugo-theme-zzo?label=Star&style=social
+#     alt: Hugo ZDoc theme github stars
 ---
