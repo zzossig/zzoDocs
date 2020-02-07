@@ -6,7 +6,7 @@ weight: 7
 enableToc: false
 ---
 
-Zzo theme make search index for the search. So, in order to use the search, you need to add this config params to `config.toml` file.
+1. Zzo theme make search index for the search. So, in order to use the search, you need to add this config params to `config.toml` file.
 
 ```toml
 ...
@@ -26,3 +26,11 @@ Zzo theme make search index for the search. So, in order to use the search, you 
 ```
 
 These config params make search index on every page.
+
+2. We have an option to the search results rendering position.
+
+    your `params.toml` file,
+    ```
+    ...
+    searchResultPosition = "main" # side, main
+    ```
