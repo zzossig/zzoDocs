@@ -13,17 +13,6 @@
   "use strict";
 
   window.onload = function() {
-    // =================== search-result desktop ==================
-    var single = document.querySelector('.single');
-    var searchResult = document.querySelector('.search-result');
-    var searchResultCloseBtn = document.querySelector('.search-result__close');
-    searchResultCloseBtn ? searchResultCloseBtn.addEventListener('click', function(e) {
-      searchResult.setAttribute('data-display', 'none');
-      single.setAttribute('data-display', 'block');
-    }) : null;
-    // ============================================================
-
-
     // ========================== expand ==========================
     var expandBtn = document.querySelectorAll('.expand__button');
 
