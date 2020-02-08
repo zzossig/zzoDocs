@@ -13,15 +13,19 @@ Basially, the publication page is created to represent a `.bib` file. But you ca
 I made a library to parse the `.bib`file to `md`file. Follow the steps below to install the library.
 
 1. Install pip(The Python Package Installer) first.
+
 2. Install `zzo-bibtex-paresr` by typing this in your terminal.
     ```
     pip install zzo-bibtex-parser==1.0.8
     ```
+
 3. Prepare your .bib file to the root folder.
+
 4. Assuming your file name is bibtex.bib, from the root of your project, type this.
     ```
     zzo --path bibtex.bib
     ```
+
 5. Make a publication menu. In your menu.toml file
     ```
     ...
@@ -31,12 +35,16 @@ I made a library to parse the `.bib`file to `md`file. Follow the steps below to 
       url = "publication"
       weight = 6
     ```
+
 6. Set new param to your `params.toml` file.
     ```
     ...
     pubPaginate = 20
     ```
+
 7. Now, you can see the publications page when you start the hugo
+
+8. If the year of the post is the curreny year, the post set the `pinned` param to `true` by default.
 
 ## manually
 
@@ -82,4 +90,4 @@ If you don't have `.bib` file and just take advantage of the publication page, y
 
 5. Now, you get the idea. Make any section you want and there, make any publication like above.
 
-6. You can pinned the publication by setting parameter `pinned` to `true`. The pinned publication will show up in the overview page.
+6. You can pin the publication by setting parameter `pinned` to `true`. The pinned publication will show up in the overview page. 

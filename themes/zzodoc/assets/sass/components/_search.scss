@@ -123,21 +123,23 @@
 
       @include themify($themes) {
         border-bottom: 2px dashed themed('hr-color');
-      }
 
-      &--title {
-        font-family: $title-font;
-        font-size: 1.5rem;
-        margin: 0.25rem 0;
+        &--title {
+          font-family: $title-font;
+          font-size: 1rem;
+          margin: 0.25rem 0;
+          color: themed('title-color');
 
-        &::before {
-          content: "📋 ";
+          &::before {
+            content: "📋 ";
+          }
         }
-      }
 
-      &--desc {
-        font-size: 1rem;
-        margin: 0.25rem 0;
+        &--desc {
+          font-size: 0.9rem;
+          margin: 0.25rem 0;
+          color: themed('body-color');
+        }
       }
     }
   }
@@ -199,7 +201,9 @@
     &-item {
       width: 100%;
       font-size: 1rem;
-      padding: 0.125rem;
+      padding: 0.35rem 0.6rem;
+
+
       @include on-event {
         @include themify($themes) {
           background-color: themed('search-hover-background-color');
@@ -318,6 +322,8 @@
 
   &__item {   
     padding: 0.5rem;   
+    list-style-type: none;
+
     &--title {
       font-size: 1.2rem;      
       @include themify($themes) {
@@ -329,7 +335,6 @@
       font-size: 0.9rem;
       padding: 0.25rem 0.5rem;
       
-      @include truncate(960px);
       @include themify($themes) {
         color: themed('search-color');
       }
