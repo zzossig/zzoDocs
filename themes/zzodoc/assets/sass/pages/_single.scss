@@ -136,6 +136,7 @@
 
       @include themify($themes) {
         border-top: 1px solid themed('border-line-color');
+        border-bottom: 1px solid themed('border-line-color');
 
         @include webkit-scrollbars(themed('custom-scrollbar-foreground-color'), themed('custom-scrollbar-background-color'));
         @include moz-scrollbars(themed('custom-scrollbar-foreground-color'), themed('custom-scrollbar-background-color'));
@@ -146,8 +147,8 @@
       position: relative;
       margin: 1rem 0;
 
-      @include themify($themes) {
-        border-left: 5px solid themed('border-line-color');
+      @include themify($codeblock) {
+        border-left: 4px solid themed('content-pre-border-background-color');
       }
     }
 
@@ -479,12 +480,15 @@ pre:not(.chroma) {
 
   table.lntable {
     overflow-x: auto;
+
     @include themify($themes) {
       @include webkit-scrollbars(themed('custom-scrollbar-foreground-color'), themed('custom-scrollbar-background-color'));
       @include moz-scrollbars(themed('custom-scrollbar-foreground-color'), themed('custom-scrollbar-background-color'));
+    }
 
+    @include themify($codeblock) {
       td:first-child {
-        border-left: 5px solid themed('border-line-color');
+        border-left: 4px solid themed('content-pre-border-background-color');
       }
     }
   }
