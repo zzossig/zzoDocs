@@ -136,7 +136,6 @@
 
       @include themify($themes) {
         border-top: 1px solid themed('border-line-color');
-        border-bottom: 1px solid themed('border-line-color');
 
         @include webkit-scrollbars(themed('custom-scrollbar-foreground-color'), themed('custom-scrollbar-background-color'));
         @include moz-scrollbars(themed('custom-scrollbar-foreground-color'), themed('custom-scrollbar-background-color'));
@@ -146,6 +145,10 @@
     pre:not(.chroma) {
       position: relative;
       margin: 1rem 0;
+
+      @include themify($themes) {
+        border-left: 5px solid themed('border-line-color');
+      }
     }
 
     div.chroma {
@@ -169,13 +172,14 @@
       margin: 0 1.75rem 1.75rem 1.5rem;
       padding: 0 0 0 1.42188rem;
       font-size: 1.05rem;
+      font-style: italic;
       line-height: 1.75;
       color: inherit;
       opacity: 0.8;
       position: relative;
       
       @include themify($themes) {
-          border-left: 0.32813rem solid themed("single-blockquote-border-color");
+          border-left: 5px solid themed("single-blockquote-border-color");
       }
 
       code:not([class^=language]) {
@@ -209,8 +213,13 @@
     ul {
       margin-right: 0;
       margin-top: 0;
+      margin-bottom: 1rem;
       padding: 0;
       list-style: disc outside none;
+    }
+
+    ol {
+      margin-bottom: 1rem;
     }
 
     li {
@@ -416,7 +425,7 @@ pre:not(.chroma) {
 
     &::after {
       position: absolute;
-      top: 0;
+      top: 2px;
       right: 0;
       z-index: z('clipboard');
       padding: 0.125rem 0.25rem;
@@ -428,13 +437,15 @@ pre:not(.chroma) {
       display: inline-block;
       text-transform: capitalize;
       border-top-left-radius: 0.2rem;
-      border-top-right-radius: 0.2rem;
       content: attr(data-lang);
 
       @include themify($themes) {
-        border: 1px solid themed('hr-color');
-        border-bottom: none;  
-        background-color: themed('body-background-color');
+        border-top: 1px solid themed('hr-color');
+        border-left: 1px solid themed('hr-color');
+      }
+
+      @include themify($codeblock) {
+        background: themed('content-pre-header-background-color');
       }
     }
   }
@@ -471,6 +482,10 @@ pre:not(.chroma) {
     @include themify($themes) {
       @include webkit-scrollbars(themed('custom-scrollbar-foreground-color'), themed('custom-scrollbar-background-color'));
       @include moz-scrollbars(themed('custom-scrollbar-foreground-color'), themed('custom-scrollbar-background-color'));
+
+      td:first-child {
+        border-left: 5px solid themed('border-line-color');
+      }
     }
   }
 }

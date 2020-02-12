@@ -3,6 +3,10 @@
   margin: 1.5rem 0;
   border-radius: 0.25rem;
 
+  @include themify($themes) {
+    border-top: 1px solid themed('border-line-color'); 
+  }
+
   &__content {
     padding: 0 1.125rem;
     overflow: hidden;
@@ -11,10 +15,6 @@
     border-bottom-right-radius: 0.25rem;
 
     @include transition(all, 0.2s, ease);
-    @include themify($themes) {
-      border-top: 1px solid themed('content-box-border-color');
-      background-color: themed('toc-body-background-color');
-    }
 
     li {
       font-size: 15.2px;
@@ -52,8 +52,6 @@
     padding: 0.125rem;
     font-size: 1rem;
     font-family: $title-font;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
 
     @include flexbox();
     @include align-items(center);
