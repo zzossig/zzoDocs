@@ -4,17 +4,14 @@ description: Blog list page
 blogHeaderType: text
 header:
   - type: text
-    height: 170
+    height: 112
     paddingX: 50
     align: center
     title:
       - Blog
     subtitle:
-    titleColor: 
-    titleFontSize: 44
-    subtitleColor: 
-    subtitleFontSize: 20
-    spaceBetweenTitleSubtitle: 16
+      - 
+    spaceBetweenTitleSubtitle: 0
   
   - type: img
     imageSrc: images/header/background.png
@@ -29,11 +26,7 @@ header:
       - 
     subtitle:
       - 
-    titleColor: 
     titleShadow: true
-    titleFontSize: 44
-    subtitleColor: 
     subtitleCursive: true
-    subtitleFontSize: 16
     spaceBetweenTitleSubtitle: 20
 ---

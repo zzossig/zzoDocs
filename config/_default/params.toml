@@ -12,6 +12,7 @@ enableSearchHighlight = true
 enableLangChange = true
 enableDarkMode = true
 enableBreadcrumb = true
+enableBlogBreadcrumb = true
 enableEditBtn = true
 enableToc = true
 enableMenu = true
