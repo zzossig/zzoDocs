@@ -6,6 +6,30 @@ weight: 5
 enableToc: false
 ---
 
+## New param (since 2020-02-13)
+
+I added new param named `tocLevels`. Sometimes toc doesn't work well with the below config params. So I added the new param and this will fix some toc related issues.
+
+- Set `tocLevels` globally. In your `params.toml` file,
+
+    ```toml
+    ...
+    tocLevels = ["h2", "h3", "h4"]
+    ```
+
+- Set `tocLevels` locally. In your your post markdown file.
+
+    ```yaml
+    ---
+    title:
+    date:
+    ...
+    tocLevels: ["h2", "h3", "h4"]
+    ---
+    ```
+
+So, the h2 is the minimum, h4 is the maximum toc level that used in an article.
+
 ## config.toml
 
 There are some `toc` related params in the `config.toml` file.
