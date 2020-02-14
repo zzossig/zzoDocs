@@ -28,23 +28,15 @@
   </div>
 </div>
 
-<div class="mid">
-  <main class="main">
+<div class="mid blog__bg">
+  <main class="main blog__bg">
     <div class="sv" data-view="full">
-      {{ $paginator := .Paginate (.Pages.GroupByDate (.Site.Params.taxoGroupByDate | default "2006")) .Site.Params.taxoPaginate }}
-      
-      {{ range ($paginator).PageGroups }}
-        <span class="taxo__key">{{ .Key }}</span>
-        <ul class="taxo__ul">
-          {{ range .Pages }}
-          <li class="taxo__li">
-            <a href="{{ .Permalink }}" class="taxo__title">{{ .Title }}</a>
-          </li>
-          {{ end }}
-        </ul>
-      {{ end }}
-
-      {{ partial "main/component/pagination.html" . }}
+      <div class="blog">
+        {{ range .RegularPages }}
+          {{ .Render "summary" }}
+        {{ end }}
+        {{ partial "main/component/pagination.html" . }}
+      </div>
     </div>
 
   </main>

@@ -24,7 +24,7 @@
       margin: 2rem 1.5rem;
 
       @include themify($themes) {
-        color: themed("single-header-title-color");
+        color: themed("title-color");
       }
     }
   }
@@ -44,7 +44,7 @@
     overflow-wrap: break-word;
 
     @include themify($themes) {
-      color: themed("single-header-title-color");
+      color: themed("title-color");
     }
   }
 

@@ -4,7 +4,7 @@
   text-decoration: none !important;
 
   @include themify($themes) {
-    color: darken(themed('single-contents-title-color'), 5%);
+    color: darken(themed('subtitle-color'), 5%);
     @include on-event {
       color: themed('link-hover');
     }
