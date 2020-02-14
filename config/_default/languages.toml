@@ -2,9 +2,10 @@
   title = "Zzo"
   languageName = "English"
   weight = 1
-  languagedir = "rtl"
+  languagedir = "ltr"
   
 [ko]
   title = "Zzo"
   languageName = "한국어"
   weight = 2
+  languagedir = "ltr"
