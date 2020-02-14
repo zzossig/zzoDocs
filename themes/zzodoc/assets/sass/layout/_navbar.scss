@@ -5,6 +5,7 @@
   padding: 0 0.75rem;
   height: 100%;
   position: relative;
+  direction: ltr;
 
   @include flexbox();
   @include align-items(center);

@@ -1,7 +1,7 @@
 <div class="mid">
   <div class="divider">
 
-    <nav id="list-menu" class="l">
+    <nav id="list-menu" class="l" data-dir="{{ $.Param "languagedir" | default "ltr" }}">
       {{ if $.Param "enableMenu" }}
         {{ partial "main/sections/list-menu.html" . }}
       {{ end }}
@@ -12,7 +12,7 @@
       {{ partial "main/component/pagination-single.html" . }}
     </article>
 
-    <section id="list-side" class="r">
+    <section id="list-side" class="r" data-dir="{{ $.Param "languagedir" | default "ltr" }}">
     </section>
 
   </div>
