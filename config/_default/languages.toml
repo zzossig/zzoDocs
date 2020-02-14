@@ -2,6 +2,7 @@
   title = "Zzo"
   languageName = "English"
   weight = 1
+  languagedir = "rtl"
   
 [ko]
   title = "Zzo"

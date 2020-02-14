@@ -110,17 +110,37 @@
     var drawer = document.getElementById('myDrawer');
     var drawerCloseBtn = document.querySelector('.drawer__close');
 
+    {{ $languagedir := ($.Param "languagedir" | default "ltr") }}
+    var languagedir = JSON.parse({{ $languagedir | jsonify }});
+
     var openDrawer = function() {
-      modal.style.left = 0;
       modal.style.opacity = 1;
-      drawer.style.left = 0;
+
+      if (languagedir === 'rtl') {
+        modal.style.right = 0;
+        drawer.style.right = 0;
+      } else {
+        modal.style.left = 0;
+        drawer.style.left = 0;
+      }
     }
 
     var closeDrawer = function() {
       modal.style.opacity = 0;
-      drawer.style.left = '-100%';
+
+      if (languagedir === 'rtl') {
+        drawer.style.right = '-100%';
+      } else {
+        drawer.style.left = '-100%';
+      }
+
+      
       setTimeout(function () {
-        modal.style.left = '-100%';
+        if (languagedir === 'rtl') {
+          modal.style.right = '-100%';
+        } else {
+          modal.style.left = '-100%';
+        }
       }, 250);
     }
 
