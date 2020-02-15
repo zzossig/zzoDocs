@@ -12,6 +12,9 @@
 <script>
   "use strict";
 
+  {{ $languagedir := ($.Param "languagedir" | default "ltr") }}
+  var languagedir = JSON.parse({{ $languagedir | jsonify }});
+
   window.onload = function() {
     // ===================== navbar collapse ======================
     var navCollapseBtn = document.getElementById('navCollapseBtn');
@@ -92,12 +95,22 @@
           content.style.maxHeight = null;
           content.classList.remove('active');
           menuTitleIcon.classList.add('right');
-          menuTitleIcon.classList.remove('down');
+          
+          if (languagedir === 'rtl') {
+            menuTitleIcon.classList.remove('downrtl');
+          } else {
+            menuTitleIcon.classList.remove('down');
+          }
         } else {
           content.style.maxHeight = content.scrollHeight + "px";
           content.classList.add('active');
           menuTitleIcon.classList.remove('right');
-          menuTitleIcon.classList.add('down');
+          
+          if (languagedir === 'rtl') {
+            menuTitleIcon.classList.add('downrtl');
+          } else {
+            menuTitleIcon.classList.add('down');
+          }
         }
       });
     });
@@ -109,9 +122,6 @@
     var modal = document.getElementById("myModal");
     var drawer = document.getElementById('myDrawer');
     var drawerCloseBtn = document.querySelector('.drawer__close');
-
-    {{ $languagedir := ($.Param "languagedir" | default "ltr") }}
-    var languagedir = JSON.parse({{ $languagedir | jsonify }});
 
     var openDrawer = function() {
       modal.style.opacity = 1;

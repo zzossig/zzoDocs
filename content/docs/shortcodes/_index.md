@@ -5,12 +5,3 @@ draft: false
 collapsible: true
 weight: 4
 ---
-
-[Alert](alert)
-[Box](box)
-[Code](codeblock)
-[Expand](expand)
-[Image](img)
-[Notice](notice)
-[Tab](tab)
-[Button](button)
