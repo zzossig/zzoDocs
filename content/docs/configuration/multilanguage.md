@@ -6,6 +6,8 @@ weight: 6
 enableToc: false
 ---
 
+To enable/disable the language translation button in the footer, edit the parameter `enableLangChange` in `params.toml`.
+
 The default language of this theme is English. If you want to use another language, follow these steps
 
 1. Make a menu file.
