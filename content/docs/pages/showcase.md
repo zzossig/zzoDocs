@@ -27,6 +27,7 @@ Showcase page is a listing page of project showcase. Follow the below steps to m
     date: 2020-01-19T21:04:11+09:00
     description: Hugo theme collection # For SEO
     category: theme # meta info appeared on a card bottom side. category in category
+    categoryIcon: code # code, author, book, certificate, download, github, reviewer - default value is code
     enableBio: true
     ---
     ```
@@ -45,6 +46,14 @@ Showcase page is a listing page of project showcase. Follow the below steps to m
     repo: https://github.com/zzossig/hugo-theme-zzo
     pinned: true # appreared on a overview page.
     thumb: feature3/css3.png # relative path in static/images
+    links:
+    - name: # download
+      icon: # download
+      link: # https://github.com/gohugoio/hugo/releases/download/v0.64.1/hugo_extended_0.64.1_Windows-64bit.zip
+    shields:
+    - name: # GitHub stars
+      image: # https://img.shields.io/github/stars/zzossig/hugo-theme-zdoc?label=Star&style=social
+      link: # https://github.com/zzossig/hugo-theme-zdoc
     ---
     ```
 
