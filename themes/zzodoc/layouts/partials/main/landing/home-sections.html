@@ -1,8 +1,12 @@
 {{ range .Params.sections }}
-  <section class="bgcolor__header">
+  <section class="bgcolor__{{ .bgcolor }}">
     <div class="divider">
       <div class="lmr">
-        {{ .title }}
+        {{ if eq .type "card" }}
+          {{ partial "main/landing/section-card.html" . }}
+        {{ else }}
+          {{ printf "%#v" "Not supported type" }}
+        {{ end }}
       </div>
     </div>
   </section>

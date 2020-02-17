@@ -1,0 +1,23 @@
+.section {
+  &__card {
+    &--header {
+      position: relative;
+      @include flexbox();
+    }
+
+    &--title {
+      z-index: z('section-title');
+      font-weight: 700;
+      font-family: $title-font;
+    }
+  }
+
+  &__highlight {
+    z-index: z('highlight');
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;
+    width: 100%;
+    height: 20px;
+  }
+}

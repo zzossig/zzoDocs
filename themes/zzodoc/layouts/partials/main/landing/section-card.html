@@ -1,0 +1,8 @@
+<div class="section__card" style="color: {{ .color }}">
+  <header class="section__card--header">
+    {{ with .header }}
+      <h2 class="section__card--title" style="font-size:{{ .fontSize | default "32" }}px; color:{{ .color }};">{{ .title }}</h2>
+      <div class="section__highlight bgcolor__{{ .hlcolor }}" style="width: {{ .width | default "220" }}px;"></div>
+    {{ end }}
+  </header>
+</div>
