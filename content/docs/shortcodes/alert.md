@@ -9,7 +9,7 @@ enableToc: false
 Alert is a colored text box.
 
 ```
-{{</* alert theme="warning" */>}} # warning, success, info, danger
+{{</* alert theme="warning" dir="ltr" */>}} # warning, success, info, danger
 **this** is a text
 {{</* /alert */>}}
 ```
