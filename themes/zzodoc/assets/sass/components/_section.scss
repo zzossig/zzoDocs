@@ -1,7 +1,12 @@
 .section {
   &__card {
+    padding: 1rem 0.75rem 3rem 0.75rem;
+
     &--header {
       position: relative;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+
       @include flexbox();
     }
 
@@ -9,6 +14,57 @@
       z-index: z('section-title');
       font-weight: 700;
       font-family: $title-font;
+    }
+
+    &--subtitle {
+      font-weight: bold;
+      font-family: $title-font;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    &--main {
+      @include flexbox();
+      @include align-items(center);
+
+      @media only screen and (max-width: 960px) {
+        @include flex-direction(column);
+      }
+    }
+
+    &--item {
+      width: 33.33%;
+      @include flex-grow(1);
+
+      &:not(:first-child):not(:last-child) {
+        margin: 1rem;
+      }
+
+      &:first-child {
+        margin-right: 1rem;
+      }
+
+      &:last-child {
+        margin-left: 1rem;
+      }
+
+      @media only screen and (max-width: 960px) {
+        width: 100%;
+      }
+    }
+
+    &--img {
+      margin: auto;
+      display: block;
+
+      &-wrapper {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &--content {
+      font-size: 1.125rem;
     }
   }
 

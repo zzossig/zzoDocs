@@ -22,33 +22,32 @@ buttons:
 sections:
   - bgcolor: teal
     color: '#fff'
+    fontSize: 32
     type: card
     header: 
       title: Why Zdoc
-      hlcolor: pink
-      color: '#fff'
+      hlcolor: blue
       width: 220
-      fontSize: 32
     cards:
       - subtitle: Performance
-        desctiption: "Rust is blazingly fast and memory-efficient: with no runtime or garbage collector, it can power performance-critical services, run on embedded devices, and easily integrate with other languages."
-        image: images/landscape.jpg
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem, et gravida lacus. "
+        image: images/section/keyboard.png
         button: 
           - name: Naver
             link: https://naver.com
             variant: contained
             size: mini
       - subtitle: Reliability
-        desctiption: "Rust’s rich type system and ownership model guarantee memory-safety and thread-safety — enable you to eliminate many classes of bugs at compile-time."
-        image: images/mountain.jpg
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
+        image: images/section/processor.png
         button: 
           - name: Google
             link: https://google.com
             variant: contained
             size: mini
       - subtitle: Productivity
-        desctiption: "Rust has great documentation, a friendly compiler with useful error messages, and top-notch tooling — an integrated package manager and build tool, smart multi-editor support with auto-completion and type inspections, an auto-formatter, and more."
-        image: images/mountains.jpg
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
+        image: images/section/root-server.png
         button: 
           - name: Yahoo
             link: https://yahoo.com
