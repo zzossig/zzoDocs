@@ -20,37 +20,37 @@ buttons:
     text: DOWNLOAD
     color: default
 sections:
-  - bgcolor: teal
-    color: '#fff'
-    fontSize: 32
-    type: card
-    header: 
-      title: Why Zdoc
-      hlcolor: blue
-      width: 220
-    cards:
-      - subtitle: Performance
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem, et gravida lacus. "
-        image: images/section/keyboard.png
-        button: 
-          - name: Naver
-            link: https://naver.com
-            variant: contained
-            size: mini
-      - subtitle: Reliability
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
-        image: images/section/processor.png
-        button: 
-          - name: Google
-            link: https://google.com
-            variant: contained
-            size: mini
-      - subtitle: Productivity
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
-        image: images/section/root-server.png
-        button: 
-          - name: Yahoo
-            link: https://yahoo.com
-            variant: contained
-            size: mini
+  # - bgcolor: teal
+  #   color: '#fff'
+  #   fontSize: 32
+  #   type: card
+  #   header: 
+  #     title: Why Zdoc
+  #     hlcolor: blue
+  #     width: 220
+  #   cards:
+  #     - subtitle: Performance
+  #       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue."
+  #       image: images/section/keyboard.png
+  #       button: 
+  #         - name: Naver
+  #           link: https://naver.com
+  #           variant: contained
+  #           size: mini
+  #     - subtitle: Reliability
+  #       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
+  #       image: images/section/processor.png
+  #       button: 
+  #         - name: Google
+  #           link: https://google.com
+  #           variant: contained
+  #           size: mini
+  #     - subtitle: Productivity
+  #       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
+  #       image: images/section/root-server.png
+  #       button: 
+  #         - name: Yahoo
+  #           link: https://yahoo.com
+  #           variant: contained
+  #           size: mini
 ---

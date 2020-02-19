@@ -1,6 +1,7 @@
 .home {
   &__landing {
     width: 100%;
+    min-height: 500px;
     
     @include flexbox();
     @include align-items(center);
