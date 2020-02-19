@@ -55,12 +55,14 @@
     }
 
     &--content {
+      height: 100%;
       font-size: 1.125rem;
     }
 
     @media only screen and (max-width: 960px) {
       &--item {
         width: 100%;
+        margin: 0.5rem 0 2rem 0 !important;
 
         @include flexbox();
       }
@@ -71,8 +73,8 @@
         @include align-items(flex-start);
       }
 
-      &--submain {
-        
+      &--subtitle {
+        text-align: left;
       }
 
       &--img {
@@ -88,7 +90,6 @@
 
       &--content {
         word-wrap: break-word;
-        padding: 0 0.5rem
       }
     }
   }
