@@ -22,4 +22,17 @@
       </div>
     {{ end }}
   </div>
+  <div class="section__card--main" data-mobile="false">
+    {{ range .cards }}
+      {{ if .button }}
+        {{ with .button }}
+          <a href="{{ .link }}" class="section__card--item" target="{{ .target }}" rel="noreferrer">
+            <button class="section__btn section__btn--{{ .size }}" style="background-color: {{ .bgcolor }}; color: {{ .color }};">{{ .name }}</button>
+          </a>
+        {{ end }}
+      {{ else }}
+        <div class="section__card--item"></div>
+      {{ end }}
+    {{ end }}
+  </div>
 </div>

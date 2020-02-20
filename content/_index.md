@@ -33,24 +33,33 @@ sections:
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue."
         image: images/section/keyboard.png
         button: 
-          - name: Naver
-            link: https://naver.com
-            variant: contained
-            size: mini
+          name: Naver
+          link: https://naver.com
+          variant: contained
+          size: large
+          target: _blank
+          color: 'white'
+          bgcolor: '#283593'
       - subtitle: Reliability
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
         image: images/section/processor.png
         button: 
-          - name: Google
-            link: https://google.com
-            variant: contained
-            size: mini
+          name: Google
+          link: https://google.com
+          variant: contained
+          size: large
+          target: _blank
+          color: 'white'
+          bgcolor: '#283593'
       - subtitle: Productivity
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id eleifend erat. Integer eget mattis augue. Suspendisse semper laoreet tortor sed convallis. Nulla ac euismod lorem"
         image: images/section/root-server.png
         button: 
-          - name: Yahoo
-            link: https://yahoo.com
-            variant: contained
-            size: mini
+          name: Yahoo
+          link: https://yahoo.com
+          variant: contained
+          size: large
+          target: _blank
+          color: 'white'
+          bgcolor: '#283593'
 ---

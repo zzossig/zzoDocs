@@ -1,11 +1,51 @@
 .section {
+  &__btn {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+
+    @include on-event {
+      border: 1px solid white;
+    }
+
+    &--micro {
+      height: 20px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    &--mini {
+      height: 24px;
+      font-size: 15px;
+      line-height: 15px;
+    }
+
+    &--small {
+      height: 28px;
+      font-size: 16px;
+    }
+
+    &--medium {
+      height: 32px;
+      font-size: 17px;
+      line-height: 17px;
+    }
+
+    &--large {
+      height: 36px;
+      font-size: 18px;
+    }
+  }
+
   &__card {
-    padding: 1rem 0.75rem 3rem 0.75rem;
+    padding: 1rem 0.75rem 2rem 0.75rem;
+    position: relative;
 
     &--header {
       position: relative;
-      margin-top: 2rem;
-      margin-bottom: 3rem;
+      margin: 2rem 0;
 
       @include flexbox();
     }
@@ -24,12 +64,15 @@
     }
 
     &--main {
+      padding: 0.5rem 0;
       @include flexbox();
     }
 
     &--item {
       width: 33.33%;
       height: 100%;
+
+      @include flex-grow(1);
 
       &:not(:first-child):not(:last-child) {
         margin: 0 1rem;
@@ -56,6 +99,7 @@
 
     &--content {
       height: 100%;
+      margin-bottom: 0.75rem;
       font-size: 1.125rem;
     }
 
