@@ -4,21 +4,62 @@ description: Hugo Zzo theme documentation landing page
 date: 2020-01-26T04:15:05+09:00
 draft: false
 # updatesBanner: "Banner - &nbsp; [Hugo ZDoc theme](https://github.com/zzossig/hugo-theme-zdoc) &nbsp; just arrived"
-landingImage: favicon/android-icon-192x192.png
-landingTitle:
-  - Zzo Docs
-landingText:
-  - Make a blog with hugo zzo theme!
-titleColor:
-textColor:
-spaceBetweenTitleText: 25
-buttons:
-  - link: docs/gettingstarted/quickstart
-    text: GET STARTED
-    color: primary
-  - link: https://github.com/zzossig/hugo-theme-zzo
-    text: DOWNLOAD
-    color: default
+landing:
+  image: favicon/android-icon-192x192.png
+  title:
+    - Zzo Docs
+  text:
+    - Make a blog with hugo zzo theme!
+  titleColor:
+  textColor:
+  spaceBetweenTitleText: 25
+  buttons:
+    - link: docs/gettingstarted/quickstart
+      text: GET STARTED
+      color: primary
+    - link: https://github.com/zzossig/hugo-theme-zzo
+      text: DOWNLOAD
+      color: default
+footer:
+  sections:
+    - title: General
+      links:
+        - title: Docs
+          link: https://gohugo.io/
+        - title: Learn
+          link: https://gohugo.io/
+        - title: Showcase
+          link: https://gohugo.io/
+        - title: Blog
+          link: https://gohugo.io/
+    - title: resources
+      links:
+        - title: GitHub
+          link: https://gohugo.io/
+        - title: Releases
+          link: https://gohugo.io/
+        - title: Spectrum
+          link: https://gohugo.io/
+        - title: Telemetry
+          link: https://gohugo.io/
+    - title: Features
+      links:
+        - title: GitHub
+          link: https://gohugo.io/
+        - title: Releases
+          link: https://gohugo.io/
+        - title: Spectrum
+          link: https://gohugo.io/
+        - title: Telemetry
+          link: https://gohugo.io/
+  contents: 
+    align: left
+    applySinglePageCss: false
+    markdown:
+      |
+      ## Zzo docs
+      Copyright © 2020. All rights reserved.
+
 sections:
   - bgcolor: teal
     type: card
