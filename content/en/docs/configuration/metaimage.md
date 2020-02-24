@@ -7,6 +7,7 @@ enableToc: false
 ---
 
 We have front matter for the images used in link preview(twitter, facebook, etc...)
+If the meta_image front-matter is not set, `image` front-matter will be used instead(as a default value).
 
 ```yaml
 ---
