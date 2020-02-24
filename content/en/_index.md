@@ -20,6 +20,9 @@ landing:
     - link: https://github.com/zzossig/hugo-theme-zzo
       text: DOWNLOAD
       color: default
+  # backgroundImage: 
+  #   src: images/landscape.jpg
+  #   height: 600
 footer:
   sections:
     - title: General
