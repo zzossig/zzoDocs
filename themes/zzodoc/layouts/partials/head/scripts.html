@@ -101,6 +101,13 @@
           return null;
         }
 
+        var parent = elem.parentNode;
+        var addHeight = 0;
+        while (parent.classList.contains('menu__list')) {
+          parent.style.maxHeight = 76 * parent.children.length + "px";
+          parent = parent.parentNode;
+        }
+
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
           content.classList.remove('active');
