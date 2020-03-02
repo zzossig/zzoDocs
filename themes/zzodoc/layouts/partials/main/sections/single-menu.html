@@ -22,11 +22,15 @@
   
   {{ $sectionName1 := index (last 1 (split (delimit (split $ctx.Permalink "/") "," "") ",")) 0 }}
   {{ $sectionName2 := index (last 2 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
+
+  {{ $active := in $currentURL $ctx.Permalink }}
+  {{ $active = or $active (eq $sectionName1 $sectionName2) }}
+  {{ $active = or $active (in $currentURL $sectionName1) }}
+  
   {{ if $ctx.Params.Collapsible }}
-  <span class="menu__title--collapse {{ if and (in $currentURL $ctx.Permalink) (eq $sectionName1 $sectionName2) }}active{{ end }}" data-depth="{{ $depth }}">
+  <span class="menu__title--collapse {{ if $active }}active{{ end }}" data-depth="{{ $depth }}" data-cururl="{{ $currentURL}}" data-secname1="{{ $sectionName1 }}">
     {{ $ctx.Title }}
-    <span
-      class="menu__title--icon {{ if and (in $currentURL $ctx.Permalink) (eq $sectionName1 $sectionName2) }}{{ if eq ($root.Param "languagedir") "rtl" }}downrtl{{ else }}down{{ end }}{{ else }}right{{ end }}">
+    <span class="menu__title--icon {{ if $active }}{{ if eq ($root.Param "languagedir") "rtl" }}downrtl{{ else }}down{{ end }}{{ else }}right{{ end }}">
       {{ if eq ($root.Param "languagedir") "rtl" }}
         {{ partial "svgs/arrow-left.svg" (dict "width" 22 "height" 22) }}
       {{ else }}
@@ -34,15 +38,15 @@
       {{ end }}
     </span>
   </span>
-  <ul class="menu__list {{ if and (in $currentURL $ctx.Permalink) (eq $sectionName1 $sectionName2) }}active{{ end }}">
+  <ul class="menu__list {{ if $active }}active{{ end }}">
     {{ range $ctx.Pages.ByWeight }}
       {{ if .Params.Collapsible }}
-        {{ template "render-menu" (dict "ctx" . "root" $ctx "depth" (add $depth 1))}}
+        {{ template "render-menu" (dict "ctx" . "root" $ctx "depth" (add $depth 1)) }}
       {{ else }}
         {{ $lastUrlElement1 := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
         {{ $lastUrlElement2 := index (last 1 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
         <li>
-          <a href="{{ .Permalink }}" class="menu__title {{ if and (eq $lastUrlElement1 $lastUrlElement2) (eq $sectionName1 $sectionName2) }}active{{ end }}">{{ .Title }}</a>
+          <a href="{{ .Permalink }}" class="menu__title {{ if and (eq $lastUrlElement1 $lastUrlElement2) (eq $sectionName1 $sectionName2) }}active{{ end }}" data-depth="{{ $depth }}">{{ .Title }}</a>
         </li>
       {{ end }}
     {{ end }}
@@ -50,9 +54,9 @@
   {{ else }}
   {{ $lastUrlElement1 := index (last 1 (split (delimit (split $ctx.Permalink "/") "," "") ",")) 0 }}
   {{ $lastUrlElement2 := index (last 1 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
-  <li class="{{ if and (eq $lastUrlElement1 $lastUrlElement2) (eq $sectionName1 $sectionName2) }}active{{ end }}">
+  <li class="{{ if $active }}active{{ end }}">
     <a href="{{ $ctx.Permalink }}"
-      class="menu__title {{ if and (eq $lastUrlElement1 $lastUrlElement2) (eq $sectionName1 $sectionName2) }}active{{ end }}">{{ $ctx.Title }}</a>
+      class="menu__title {{ if $active }}active{{ end }}">{{ $ctx.Title }}</a>
   </li>
   {{ end }}
 {{ end }}
