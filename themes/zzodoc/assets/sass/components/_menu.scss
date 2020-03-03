@@ -109,9 +109,6 @@
         color: themed('body-color');
 
         &.active {
-          font-weight: bold;
-          color: themed('active-font-color');
-
           svg {
             color: themed('active-font-color');
           }
