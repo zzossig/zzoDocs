@@ -7,16 +7,22 @@ themeOptions = ["light", "dark"]
 
 useFaviconGenerator = true # https://www.favicon-generator.org/
 
+enableTocSwitch = true
+enableLandingBackground = false
 enableSearch = true
+enableSearchHighlight = true
 enableLangChange = true
 enableDarkMode = true
 enableBreadcrumb = true
+enableBlogBreadcrumb = true
+enableEditBtn = false
 enableToc = true
 enableMenu = true
 enableNavbar = true
 enableFooter = true
 showPoweredBy = true
 
+tocLevels = ["h2", "h3", "h4"]
 paginateWindow = 1
 taxoPaginate = 13
 taxoGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
@@ -24,7 +30,7 @@ taxoGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 github = "https://github.com/zzossig/hugo-theme-zdoc"
 
 # comment
-enableComment = true
+enableComment = false
 disqus_shortname = ""
 commento = false
 

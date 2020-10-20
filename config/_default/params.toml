@@ -2,7 +2,7 @@ logo = true
 logoText = "Z Themes"
 logoType = "short" # long, short
 description = "The Zzo theme documentation site."
-editBaseURL = "https://github.com/zzossig/zzoDocs/blob/master/content"
+editBaseURL = "https://github.com/zzossig/zzoDocs/blob/master/content/en"
 themeOptions = ["light", "dark"]
 
 useFaviconGenerator = true # https://www.favicon-generator.org/

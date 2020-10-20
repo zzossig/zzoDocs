@@ -9,11 +9,7 @@ tags = [
     "html",
     "themes",
 ]
-categories = [
-    "themes",
-    "syntax",
-]
-series = ["Themes Guide"]
+tocLevels = ["h2", "h3", "h4", "h5"]
 
 +++
 

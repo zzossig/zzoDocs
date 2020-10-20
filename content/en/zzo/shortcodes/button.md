@@ -26,7 +26,7 @@ enableToc: false
 
     You can customize the button primary color in the file at `root/data/button.toml`. Just copy-paste the theme's button.toml file and edit the params as you want.
 
-    ```toml
+    ```data/button.toml
     # restart hugo after set the values
     dark_primary_color = "#82aaff"
     light_primary_color = "#728fcb"
@@ -34,5 +34,3 @@ enableToc: false
     solarized_primary_color = "#689f38"
     kimbie_primary_color = "#8ab1b0"
     ```
-
-    `button.toml`
