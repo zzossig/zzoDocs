@@ -1,4 +1,4 @@
-baseURL = "https://zzodocs.netlify.com"
+baseURL = "https://zzo-docs.vercel.app"
 theme = "zzodoc"
 
 defaultContentLanguage = "en"
