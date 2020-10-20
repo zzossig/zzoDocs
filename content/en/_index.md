@@ -1,6 +1,6 @@
 ---
-title: Zzo
-description: Hugo Zzo theme documentation landing page
+title: Z Themes
+description: Hugo zzo, zdoc theme documentation landing page
 date: 2020-01-26T04:15:05+09:00
 draft: false
 # updatesBanner: "Banner - &nbsp; [Hugo ZDoc theme](https://github.com/zzossig/hugo-theme-zdoc) &nbsp; just arrived"
@@ -8,18 +8,18 @@ landing:
   height: 500
   image: favicon/android-icon-192x192.png
   title:
-    - Zzo Docs
+    - Z Themes
   text:
-    - Make a blog with hugo zzo theme!
+    - This is Hugo Z Themes documentation site
   titleColor:
   textColor:
   spaceBetweenTitleText: 25
   buttons:
-    - link: docs/gettingstarted/quickstart
-      text: GET STARTED
+    - link: zzo
+      text: HUGO THEME ZZO
       color: primary
-    - link: https://github.com/zzossig/hugo-theme-zzo
-      text: DOWNLOAD
+    - link: zdoc
+      text: HUGO THEME ZDOC
       color: default
   # backgroundImage: 
   #   src: images/landscape.jpg

@@ -45,12 +45,14 @@
     border: none;
     font-size: 1rem;
     font-family: $title-font;
+    margin: 0.5rem 0;
 
     @include flexbox();
     @include align-items(center);
     @include themify($themes) {
       color: inherit;
       border-top: 1px solid themed('border-line-color');
+      border-bottom: 1px solid themed('border-line-color');
       background-color: themed('expand-background-color');
       @include on-event {
         background-color: themed('expand-background-color-hover');

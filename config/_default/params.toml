@@ -1,5 +1,5 @@
 logo = true
-logoText = "Zzo docs"
+logoText = "Z Themes"
 logoType = "short" # long, short
 description = "The Zzo theme documentation site."
 editBaseURL = "https://github.com/zzossig/zzoDocs/blob/master/content"
@@ -25,7 +25,6 @@ enableNavbar = true
 enableFooter = true
 showPoweredBy = true
 
-tocLevels = ["h2", "h3", "h4"]
 paginateWindow = 1
 taxoPaginate = 13
 taxoGroupByDate = "2006" # "2006-01": group by month, "2006": group by year

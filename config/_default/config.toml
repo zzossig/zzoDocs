@@ -1,5 +1,4 @@
 baseURL = "https://zzodocs.netlify.com"
-title = "Hugo Zzo Theme Documentation"
 theme = "zzodoc"
 
 defaultContentLanguage = "en"
@@ -28,7 +27,7 @@ disableKinds = ["taxonomyTerm"]
     lineNumbersInTable = true
     noClasses = false
   [markup.tableOfContents]
-    endLevel = 4
+    endLevel = 5
     ordered = false
     startLevel = 2
 

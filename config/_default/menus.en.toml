@@ -1,17 +1,17 @@
 [[main]]
-  identifier = "docs"
-  name = "Docs"
-  url = "docs"
+  identifier = "Zzo"
+  name = "Zzo theme"
+  url = "zzo"
   weight = 1
 
 [[main]]
-  identifier = "updates"
-  name = "Updates"
-  url = "updates"
+  identifier = "Zdoc"
+  name = "Zdoc theme"
+  url = "zdoc"
   weight = 2
 
 [[main]]
-  identifier = "blog"
+  identifier = "Blog"
   name = "Blog"
   url = "blog"
   weight = 3
