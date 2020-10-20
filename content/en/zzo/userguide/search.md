@@ -3,7 +3,7 @@ title: "Search"
 date: 2020-02-07T01:27:35+09:00
 draft: false
 weight: 7
-enableToc: false
+enableToc: true
 ---
 
 ## prerequisite
