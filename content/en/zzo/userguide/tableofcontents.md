@@ -24,7 +24,7 @@ tocLevels = ["h2", "h3", "h4"]
 
 ```
 
-Check out the toc related params [documentation](http://localhost:1313/zzo/configuration/params.toml/#enabletoc)
+Check out the toc related params [documentation](https://zzo-docs.vercel.app/zzo/configuration/params.toml/#enabletoc) to see what it is.
 
 ## config.toml
 

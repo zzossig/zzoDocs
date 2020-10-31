@@ -30,7 +30,7 @@ enableToc: true
       url = "blog"
       weight = 3
     ```
-4. Now, you can make some contents in the blog folder. Make a markdown file in this format. For the `tocLevels` Front-Matter, refer [this guide](http://localhost:1313/zzo/userguide/tableofcontents/#configtoml). There are no taxonomies other than tags.
+4. Now, you can make some contents in the blog folder. Make a markdown file in this format. For the `tocLevels` Front-Matter, refer [this guide](https://zzo-docs.vercel.app/zzo/userguide/tableofcontents/#configtoml). There are no taxonomies other than tags.
 
     ```root/content/en/blog/myPost.md
     ---
