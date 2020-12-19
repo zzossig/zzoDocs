@@ -11,7 +11,7 @@ You can set a typewriter header that appears on your home page. Follow the steps
 1. Set the `homeHeaderType` param to `typewriter` in the `params.toml` file.
     ```params.toml
     ...
-    homeHeaderType = "text" # text, img, slide, typewriter
+    homeHeaderType = "typewriter" # text, img, slide, typewriter
     ...
     ```
 2. Add some Front-Matters in your content root `_index.md` file.
