@@ -34,7 +34,7 @@ Go to your site root folder(`mydocs` folder in my case) and type the bellow.
 ```
 cd mydocs
 git init
-git submodule add https://github.com/zzossig/hugo-theme-zzo.git themes/zdoc
+git submodule add https://github.com/zzossig/hugo-theme-zdoc.git themes/zdoc
 ```
 
 ## Step 4: Add Config Files
