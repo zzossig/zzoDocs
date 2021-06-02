@@ -288,6 +288,11 @@ Set to true if you want to enable the search feature.
 
 ```>:params.toml
 enableSearch = true
+enableSearchHighlight = true 
+searchResultPosition = "main" # side, main
+searchContent = true          # include content to search index
+searchDistance = 100          # fuse option
+searchThreshold = 0.4         # 0.0: exact match, 1.0: any match
 ```
 
 {{< expand "enableSearch" >}}
