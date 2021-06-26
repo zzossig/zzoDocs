@@ -30,11 +30,11 @@ This theme already has the 6 different fonts. You can use any of these fonts. To
 
 If you want to use any fonts which are not listed above, you can do so. There are 2 ways to do this. 
 
-#### Method1
+#### Method 1
 
 If you have the font files (e.g. .woff2 or .woff) follow the instructions in this section.
 
-#### Method2
+#### Method 2
 
 If your custom font is from Google fonts, you can skip this section (adding font files) & follow the instructions in the next section to add link to your Google font.
 
