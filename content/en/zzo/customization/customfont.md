@@ -87,5 +87,6 @@ Make a file at `root/layouts/partials/head/custom-head.html` and then load font 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Replace the next line with your font's link -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
 ```
