@@ -24,7 +24,7 @@ enableToc: false
     - `"\"Source Sans Pro\", sans-serif"`
     - `"\"League Gothic\", sans-serif"`
 
-## Using custom css
+## Using custom font
 
 1. Add custom css file
 
