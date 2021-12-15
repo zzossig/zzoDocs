@@ -39,7 +39,7 @@ There are some `toc` related params in the `config.toml` file.
 
 You need to set this configuration parameter. Otherwise `toc` will malfunction. `startLevel` and` endLevel` means that you use at maximum `h2` tag , and at minimum, `h3` tag for the title of the post. And h1, h4, h5, h6 tags are not going to be included in your TOC element.
 
-Some posts may have h2 tags and some posts may not. For that reason, I made `tocLevels` front-matter. So, it's best practice to use `todLevels` in every markdown file if you want to include TOC in your post.
+Some posts may have h2 tags and some posts may not. For that reason, I made `tocLevels` front-matter. So, it's best practice to use `tocLevels` in every markdown file if you want to include TOC in your post.
 
 ```yaml
 ---
