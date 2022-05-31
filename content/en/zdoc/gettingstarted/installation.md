@@ -46,7 +46,7 @@ We have to make 4 config files to make the theme work. Check out the [config fil
 - [menus.en.toml] - We can add or delete site menus.
 - [params.toml] - The params in this file are used only in the zdoc theme.
 
-If your blog is planning to support multiple languages, I recommend you to make a contry code folder first like [en], [ko], [fr] etc.
+If your blog is planning to support multiple languages, I recommend you to make a country code folder first like [en], [ko], [fr] etc.
 In this way, you can manage your contents more efficiently. And then you should specify contents folder in the `language.toml` file.
 
 ```:language.toml
@@ -56,7 +56,7 @@ In this way, you can manage your contents more efficiently. And then you should 
   ...
 ```
 
-Create your site menu by making `menus.en.toml` file. The `en` can be any contry code. I'm going to make a docs menu in this guide.
+Create your site menu by making `menus.en.toml` file. The `en` can be any country code. I'm going to make a docs menu in this guide.
 
 ```:menus.en.toml
 [[main]]
